@@ -1,0 +1,6 @@
+{
+  "name": "Clínica de Estética Beleza Atual",
+  "description": "Landing page premium e contemporânea de alta conversão para a Clínica de Estética Beleza Atual em São Bernardo do Campo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

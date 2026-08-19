@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  --color-luxury-cream: #FAF7F2;
+  --color-luxury-sand: #F4EDE4;
+  --color-luxury-nude: #E8DCD1;
+  --color-luxury-taupe: #8F7D73;
+  --color-luxury-wine: #6D242C;
+  --color-luxury-wine-dark: #44161C;
+  --color-luxury-wine-deep: #2A0E12;
+  --color-luxury-terracotta: #B26450;
+  --color-luxury-charcoal: #25211E;
+  --color-luxury-gold: #C2A27A;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #2D2825;
+    background-color: #FAF7F2;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8CAC0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B6A295;
+}
+
+/* Organic curved clip-paths */
+.clip-organic-hero {
+  clip-path: ellipse(90% 95% at 50% 45%);
+}
+
+.clip-organic-portrait {
+  border-radius: 60% 40% 45% 55% / 50% 45% 55% 50%;
+}
+
+.clip-organic-soft {
+  border-radius: 48px 48px 48px 48px;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(250, 247, 242, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card-dark {
+  background: rgba(42, 14, 18, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Text glow & subtle luxury transitions */
+.editorial-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+}
