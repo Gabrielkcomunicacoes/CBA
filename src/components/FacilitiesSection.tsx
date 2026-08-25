@@ -1,16 +1,17 @@
 import React from 'react';
 import { Layers, CreditCard, Percent, ArrowRight, MessageCircle } from 'lucide-react';
 import { getWhatsAppLink } from '../data/clinicData';
+import { AsymmetricWaveTransition } from './OrganicWaves';
 
 export const FacilitiesSection: React.FC = () => {
   return (
-    <section id="facilidades" className="relative py-14 sm:py-18 bg-gradient-to-r from-[#7D4F43] via-[#8C5D50] to-[#6E4237] text-[#FAF7F2] overflow-hidden">
+    <section id="facilidades" className="relative pt-12 sm:pt-16 pb-0 bg-gradient-to-r from-[#7D4F43] via-[#8C5D50] to-[#6E4237] text-[#FAF7F2] overflow-hidden">
       
       {/* Subtle organic background patterns */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#C2A27A]/15 rounded-full blur-3xl pointer-events-none -z-0" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#2A0E12]/20 rounded-full blur-2xl pointer-events-none -z-0" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pb-12 sm:pb-16">
         
         {/* Top Header Row with Title & CTA */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12">
@@ -89,6 +90,13 @@ export const FacilitiesSection: React.FC = () => {
         </div>
 
       </div>
+
+      {/* Organic Wave Transition into Space Section (#FAF7F2) */}
+      <AsymmetricWaveTransition
+        topColor="#6E4237"
+        bottomColor="#FAF7F2"
+        variant="terracotta-to-light"
+      />
     </section>
   );
 };

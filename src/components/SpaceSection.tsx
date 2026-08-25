@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Navigation, Clock, Car, Shield, Sparkles, ExternalLink } from 'lucide-react';
 import { CLINIC_INFO, CLINIC_PHOTOS, getWhatsAppLink } from '../data/clinicData';
+import { AsymmetricWaveTransition } from './OrganicWaves';
 
 interface SpaceSectionProps {
   onOpenDirections: () => void;
@@ -8,9 +9,9 @@ interface SpaceSectionProps {
 
 export const SpaceSection: React.FC<SpaceSectionProps> = ({ onOpenDirections }) => {
   return (
-    <section id="espaco" className="relative py-20 sm:py-28 bg-[#FAF7F2] overflow-hidden">
+    <section id="espaco" className="relative pt-16 sm:pt-24 pb-0 bg-[#FAF7F2] overflow-hidden">
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pb-16 sm:pb-24">
         
         {/* Section Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-14 sm:mb-18">
@@ -220,6 +221,13 @@ export const SpaceSection: React.FC<SpaceSectionProps> = ({ onOpenDirections }) 
         </div>
 
       </div>
+
+      {/* Organic Wave Transition into FAQ Section (#F4EDE4) */}
+      <AsymmetricWaveTransition
+        topColor="#FAF7F2"
+        bottomColor="#F4EDE4"
+        variant="light-to-sand"
+      />
     </section>
   );
 };

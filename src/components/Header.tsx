@@ -42,17 +42,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAssessment }) => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Brand Logo & Monogram */}
+        {/* Brand Logo */}
         <a
           href="#"
           className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6D242C]"
           aria-label="Beleza Atual Clínica de Estética - Início"
         >
-          {/* Stylized Monogram */}
-          <div className="w-10 h-10 rounded-full border border-[#6D242C]/30 bg-[#F4EDE4] flex items-center justify-center text-[#6D242C] transition-all duration-300 group-hover:border-[#6D242C] group-hover:bg-[#6D242C] group-hover:text-[#FAF7F2] shadow-xs">
-            <span className="font-serif-luxury text-xl font-medium tracking-tight italic">
-              BA
-            </span>
+          <div className="relative flex items-center justify-center">
+            <img
+              src="/assets/logo-transparente.webp"
+              alt="Beleza Atual Logo"
+              className="h-10 sm:h-11 w-auto max-h-12 object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </div>
 
           <div className="flex flex-col">

@@ -17,13 +17,19 @@ export interface Treatment {
 export interface Professional {
   id: string;
   name: string;
+  badge?: string;
+  roleTitle?: string;
   title: string;
   registration: string;
   image: string;
   experience: string;
+  instagram?: string;
+  instagramUrl?: string;
   specialties: string[];
   bio: string;
   credentials: string[];
+  rqes?: { label: string; value: string }[];
+  education?: string[];
 }
 
 export interface BeforeAfterCase {

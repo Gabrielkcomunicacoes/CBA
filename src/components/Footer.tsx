@@ -16,15 +16,19 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: Brand & Philosophy (4 cols) */}
           <div className="lg:col-span-4">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-full border border-[#C2A27A]/50 bg-[#351217] flex items-center justify-center text-[#C2A27A]">
-                <span className="font-serif-luxury text-lg font-medium italic">BA</span>
+            <div className="flex items-center gap-3.5 mb-5">
+              <div className="p-1 rounded-xl bg-[#FAF7F2]/10 backdrop-blur-xs border border-[#C2A27A]/30 flex items-center justify-center">
+                <img
+                  src="/assets/logo-transparente.webp"
+                  alt="Beleza Atual"
+                  className="h-10 w-auto object-contain"
+                />
               </div>
               <div className="flex flex-col">
-                <span className="font-serif-luxury text-xl font-medium tracking-wide text-[#FAF7F2]">
+                <span className="font-serif-luxury text-2xl font-medium tracking-wide text-[#FAF7F2]">
                   Beleza Atual
                 </span>
-                <span className="text-[10px] font-sans tracking-[0.2em] text-[#C2A27A] uppercase">
+                <span className="text-[10px] font-sans tracking-[0.22em] text-[#C2A27A] uppercase">
                   Clínica de Estética
                 </span>
               </div>
@@ -129,7 +133,7 @@ export const Footer: React.FC = () => {
               © {new Date().getFullYear()} Beleza Atual Clínica de Estética Ltda. Todos os direitos reservados.
             </p>
             <p className="text-[10px] text-[#8F7D73]">
-              Responsáveis Técnicos: Dr. Deli Brito (CRO-SP 98.742) • Luciana Freire (CRF-SP 45.891). Estabelecimento em conformidade com as normas da Anvisa e Vigilância Sanitária Municipal.
+              Responsáveis Técnicos: Dr. Deli Brito (CRF/SP 52.349) • Luciana Freire (CRF-SP 45.891). Estabelecimento em conformidade com as normas da Anvisa e Vigilância Sanitária Municipal.
             </p>
           </div>
 

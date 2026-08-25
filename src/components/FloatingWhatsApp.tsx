@@ -40,10 +40,10 @@ export const FloatingWhatsApp: React.FC = () => {
           </button>
 
           <div className="flex items-center gap-2.5 mb-2">
-            <div className="relative w-8 h-8 rounded-full overflow-hidden border border-[#6D242C]">
+            <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#6D242C]/40 bg-[#FAF7F2] shrink-0 shadow-xs">
               <img
-                src="https://images.unsplash.com/photo-1594824813593-3920703f8a48?auto=format&fit=crop&w=150&q=80"
-                alt="Atendimento Beleza Atual"
+                src="/assets/logo.jpg"
+                alt="Beleza Atual"
                 className="w-full h-full object-cover"
               />
               <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-[#FAF7F2]" />

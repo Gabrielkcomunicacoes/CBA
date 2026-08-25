@@ -1,6 +1,7 @@
 import React from 'react';
 import { MessageSquare, Stethoscope, ClipboardList, Sparkles, ArrowRight } from 'lucide-react';
 import { getWhatsAppLink } from '../data/clinicData';
+import { AsymmetricWaveTransition } from './OrganicWaves';
 
 export const HowItWorksSection: React.FC = () => {
   const steps = [
@@ -35,9 +36,9 @@ export const HowItWorksSection: React.FC = () => {
   ];
 
   return (
-    <section id="como-funciona" className="relative py-20 sm:py-28 bg-[#F4EDE4] overflow-hidden">
+    <section id="como-funciona" className="relative pt-12 sm:pt-16 pb-0 bg-[#F4EDE4] overflow-hidden">
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pb-16 sm:pb-24">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
@@ -117,6 +118,13 @@ export const HowItWorksSection: React.FC = () => {
         </div>
 
       </div>
+
+      {/* Organic Wave Transition into Facilities (#7D4F43) */}
+      <AsymmetricWaveTransition
+        topColor="#F4EDE4"
+        bottomColor="#7D4F43"
+        variant="sand-to-terracotta"
+      />
     </section>
   );
 };

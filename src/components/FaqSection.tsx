@@ -10,7 +10,7 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="duvidas" className="relative py-20 sm:py-28 bg-[#FAF7F2] overflow-hidden border-t border-[#E8DCD1]/60">
+    <section id="duvidas" className="relative py-14 sm:py-20 bg-[#F4EDE4] overflow-hidden">
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -32,12 +32,12 @@ export const FaqSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Minimalist Accordion */}
-        <div className="divide-y divide-[#E8DCD1] border-y border-[#E8DCD1]">
+        {/* Accordion Box */}
+        <div className="bg-[#FAF7F2] rounded-3xl p-6 sm:p-10 border border-[#E8DCD1] shadow-sm divide-y divide-[#E8DCD1]">
           {FAQS.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <div key={faq.id} className="py-5 sm:py-6 transition-colors">
+              <div key={faq.id} className="py-5 first:pt-0 last:pb-0 transition-colors">
                 <button
                   onClick={() => toggleFaq(index)}
                   className="w-full flex items-center justify-between gap-4 text-left group focus:outline-none cursor-pointer"
@@ -48,7 +48,7 @@ export const FaqSection: React.FC = () => {
                   </span>
 
                   <div className={`w-8 h-8 rounded-full border border-[#D8CAC0] flex items-center justify-center shrink-0 transition-colors ${
-                    isOpen ? 'bg-[#6D242C] text-[#FAF7F2] border-[#6D242C]' : 'bg-[#FAF7F2] text-[#6D242C] group-hover:border-[#6D242C]'
+                    isOpen ? 'bg-[#6D242C] text-[#FAF7F2] border-[#6D242C]' : 'bg-[#F4EDE4] text-[#6D242C] group-hover:border-[#6D242C]'
                   }`}>
                     {isOpen ? (
                       <Minus className="w-4 h-4" />
@@ -59,7 +59,7 @@ export const FaqSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="pt-4 pr-12 text-sm sm:text-base text-[#5A524D] leading-relaxed animate-in fade-in-50 duration-300">
+                  <div className="pt-4 pr-6 sm:pr-12 text-sm sm:text-base text-[#5A524D] leading-relaxed animate-in fade-in-50 duration-300">
                     <p>{faq.answer}</p>
                   </div>
                 )}
@@ -69,7 +69,7 @@ export const FaqSection: React.FC = () => {
         </div>
 
         {/* Quick Helper CTA */}
-        <div className="mt-12 p-6 rounded-2xl bg-[#F4EDE4] border border-[#E8DCD1] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div className="mt-8 p-6 rounded-2xl bg-[#FAF7F2] border border-[#E8DCD1] shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div>
             <h4 className="font-serif-luxury text-lg font-medium text-[#2A0E12]">
               Tem alguma dúvida específica sobre o seu caso?

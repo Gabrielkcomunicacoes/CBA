@@ -15,6 +15,8 @@ export const CLINIC_INFO = {
   email: 'contato@belezaatualestetica.com.br',
   hours: 'Segunda a Sexta: 08h às 20h | Sábado: 08h às 14h',
   instagram: '@belezaatual.estetica',
+  logo: '/assets/logo.jpg',
+  logoTransparent: '/assets/logo-transparente.webp',
   googleMapsUrl: 'https://maps.google.com/?q=Rua+Jurubatuba,+1350+-+Centro,+Sao+Bernardo+do+Campo+-+SP',
 };
 
@@ -189,31 +191,54 @@ export const PROFESSIONALS: Professional[] = [
   {
     id: 'deli-brito',
     name: 'Dr. Deli Brito',
-    title: 'Especialista em Harmonização Facial e Corporal',
-    registration: 'CRO-SP 98.742',
-    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80',
-    experience: '+10 anos de prática clínica',
+    badge: 'RT | RESPONSÁVEL TÉCNICO',
+    roleTitle: 'FARMACÊUTICO ESTETA',
+    title: 'Farmacêutico Esteta • Responsável Técnico',
+    registration: 'CRF/SP 52.349',
+    image: '/assets/deli.webp',
+    experience: '20 anos de atuação',
+    instagram: '@dr.delibrito',
+    instagramUrl: 'https://instagram.com/dr.delibrito',
+    bio: 'Com 20 anos de atuação na estética avançada, possui estudos aprofundados sobre o maior órgão do corpo humano: a pele. Seu trabalho é pautado na ciência, segurança e ética. Além de sua excelência clínica, exerce atividade docente em pós-graduações, capacitando diversos profissionais da saúde por todo o Brasil.',
+    rqes: [
+      { label: 'Estética', value: '7629-54' },
+      { label: 'Tricologia', value: '11810-92' }
+    ],
+    education: [
+      'Mestre em Nanotecnologia | Professor Docente',
+      'Graduando em Odontologia'
+    ],
     specialties: [
-      'Especialista em Harmonização Orofacial',
-      'Procedimentos Faciais e Corporais de Alta Complexidade',
-      'Professor e Palestrante em Imersões Clínicas',
-      'Membro de Associações Científicas Nacionais'
+      'Farmacêutico Esteta (CRF/SP 52.349)',
+      'Especialista em Estética Avançada (RQE 7629-54)',
+      'Especialista em Tricologia (RQE 11810-92)',
+      'Mestre em Nanotecnologia & Professor Docente'
     ],
     credentials: [
-      'Graduação em Odontologia com Foco em Anatomia Facial',
-      'Especialização Lato Sensu em Harmonização Orofacial',
-      'Certificação Internacional em Fios de Tração e Sustentação',
-      'Mais de 3.000 procedimentos de volumização e reestruturação realizados'
-    ],
-    bio: 'Dedicado a uma estética consciente e elegante, o Dr. Deli Brito alia profundo domínio anatômico à sensibilidade artística. Sua abordagem rejeita padronizações exageradas, priorizando a valorização dos traços autênticos de cada paciente em cada fase da vida.'
+      'Farmacêutico Esteta - CRF/SP 52.349',
+      'Especialidade RQE Estética: 7629-54',
+      'Especialidade RQE Tricologia: 11810-92',
+      'Mestre em Nanotecnologia | Professor Docente',
+      'Graduando em Odontologia',
+      '20 anos de atuação e capacitação de profissionais por todo o Brasil'
+    ]
   },
   {
     id: 'luciana-freire',
     name: 'Luciana Freire',
+    badge: 'ESPECIALISTA EM ESTÉTICA',
+    roleTitle: 'FARMACÊUTICA ESTETA & COSMETÓLOGA',
     title: 'Especialista em Estética Avançada e Cosmetologia',
     registration: 'CRF-SP 45.891',
     image: 'https://images.unsplash.com/photo-1594824813593-3920703f8a48?auto=format&fit=crop&w=800&q=80',
     experience: '+10 anos de experiência clínica',
+    instagram: '@belezaatual.estetica',
+    instagramUrl: 'https://instagram.com/belezaatual.estetica',
+    bio: 'Com mais de uma década de dedicação ao cuidado da pele e do corpo, Luciana Freire é reconhecida pelo acolhimento caloroso e pelo rigor técnico. Ela lidera protocolos personalizados que combinam ciência e bem-estar para devolver a confiança de cada pessoa.',
+    education: [
+      'Graduação em Farmácia com Habilitação em Estética',
+      'Pós-graduação em Cosmetologia Clínica e Dermatocosmética'
+    ],
     specialties: [
       'Especialista em Estética Avançada e Saúde Integrativa',
       'Pós-graduada em Cosmetologia Clínica e Peelings Químicos',
@@ -225,8 +250,7 @@ export const PROFESSIONALS: Professional[] = [
       'Pós-graduação em Cosmetologia e Dermatocosmética Aplicada',
       'Capacitação em Tratamentos Íntimos Femininos e Masculinos',
       'Pesquisadora de novos ativos e protocolos de bioestímulo tecidual'
-    ],
-    bio: 'Com mais de uma década de dedicação ao cuidado da pele e do corpo, Luciana Freire é reconhecida pelo acolhimento caloroso e pelo rigor técnico. Ela lidera protocolos personalizados que combinam ciência e bem-estar para devolver a confiança de cada pessoa.'
+    ]
   }
 ];
 

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { Sparkles, MessageCircle, ChevronLeft, ChevronRight, AlertCircle, Eye } from 'lucide-react';
 import { BEFORE_AFTER_CASES, getWhatsAppLink } from '../data/clinicData';
+import { AsymmetricWaveTransition } from './OrganicWaves';
 
 export const ResultsSection: React.FC = () => {
   const [activeCaseIndex, setActiveCaseIndex] = useState(0);
@@ -39,12 +40,12 @@ export const ResultsSection: React.FC = () => {
   };
 
   return (
-    <section id="resultados" className="relative py-20 sm:py-28 bg-[#F4EDE4] overflow-hidden">
+    <section id="resultados" className="relative pt-12 sm:pt-16 pb-0 bg-[#F4EDE4] overflow-hidden">
       
       {/* Background ambient accents */}
       <div className="absolute top-10 left-10 w-72 h-72 bg-[#FAF7F2] rounded-full blur-3xl pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pb-16 sm:pb-24">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
@@ -195,6 +196,13 @@ export const ResultsSection: React.FC = () => {
         </div>
 
       </div>
+
+      {/* Organic Wave Transition into Testimonials (#FAF7F2) */}
+      <AsymmetricWaveTransition
+        topColor="#F4EDE4"
+        bottomColor="#FAF7F2"
+        variant="sand-to-light"
+      />
     </section>
   );
 };

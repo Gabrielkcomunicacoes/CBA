@@ -13,7 +13,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenAssessme
       
       {/* Wave Transition into Dark Wine */}
       <AsymmetricWaveTransition
-        topColor="#FAF7F2"
+        topColor="#F4EDE4"
         bottomColor="#2A0E12"
         variant="body-to-dark"
       />

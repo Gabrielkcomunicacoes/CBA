@@ -83,11 +83,19 @@ export const InteractiveAssessmentModal: React.FC<InteractiveAssessmentModalProp
         </button>
 
         {/* Modal Header */}
-        <div className="flex items-center gap-2 mb-2">
-          <Sparkles className="w-4 h-4 text-[#6D242C]" />
-          <span className="text-[11px] font-bold uppercase tracking-wider text-[#8F7D73]">
-            Orientação Personalizada (1 minuto)
-          </span>
+        <div className="flex items-center justify-between mb-3 pr-10">
+          <div className="flex items-center gap-2.5">
+            <img
+              src="/assets/logo-transparente.webp"
+              alt="Beleza Atual"
+              className="h-8 w-auto object-contain"
+            />
+            <div className="h-4 w-px bg-[#E8DCD1]" />
+            <div className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#8F7D73]">
+              <Sparkles className="w-3.5 h-3.5 text-[#6D242C]" />
+              <span>Orientação Personalizada</span>
+            </div>
+          </div>
         </div>
 
         <h3 className="font-serif-luxury text-2xl sm:text-3xl font-medium text-[#2A0E12] mb-1">
