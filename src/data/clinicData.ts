@@ -89,7 +89,7 @@ export const TREATMENTS: Treatment[] = [
     sessionDuration: '45 a 60 minutos',
     recoveryTime: 'Retorno às atividades em 24h a 48h',
     tag: 'Destaque Facial',
-    image: 'https://images.unsplash.com/photo-1512290900672-1f4a9cebc174?auto=format&fit=crop&w=1000&q=80',
+    image: '/assets/rejuvenescimento.webp',
   },
   {
     id: 'preenchimento-facial',
@@ -109,7 +109,7 @@ export const TREATMENTS: Treatment[] = [
     sessionDuration: '40 a 60 minutos',
     recoveryTime: 'Imediato, com mínimos cuidados pós',
     tag: 'Harmonização Suave',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=80',
+    image: '/assets/harmonizacao-facial.webp',
   },
   {
     id: 'estetica-intima',
@@ -147,7 +147,7 @@ export const TREATMENTS: Treatment[] = [
     sessionDuration: '45 minutos',
     recoveryTime: 'Imediato',
     tag: 'Colágeno',
-    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80',
+    image: '/assets/rejuvenescimento.webp',
   },
   {
     id: 'toxina-botulinica',
@@ -183,7 +183,7 @@ export const TREATMENTS: Treatment[] = [
     sessionDuration: '50 a 70 minutos',
     recoveryTime: 'Imediato',
     tag: 'Corpo & Contorno',
-    image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1000&q=80',
+    image: '/assets/estetica-corporal.webp',
   }
 ];
 
@@ -385,26 +385,38 @@ export const FAQS: FaqItem[] = [
 export const CLINIC_PHOTOS: ClinicPhoto[] = [
   {
     id: 'photo-recepcao',
-    title: 'Recepção Acolhedora',
-    description: 'Design contemporâneo com iluminação suave e café de boas-vindas',
-    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80',
+    title: 'Recepção e Atendimento',
+    description: 'Design contemporâneo, iluminação suave e recepção acolhedora',
+    image: '/assets/recepcao-cba.webp',
   },
   {
     id: 'photo-consultorio',
     title: 'Sala de Procedimentos Estéticos',
-    description: 'Equipamentos de padrão hospitalar com máximo conforto e higienização',
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80',
+    description: 'Equipamentos modernos com rigoroso padrão de biossegurança e conforto',
+    image: '/assets/consultorio-cba2.webp',
   },
   {
-    id: 'photo-privativo',
-    title: 'Consultório Privativo',
-    description: 'Ambiente reservado e tranquilo para avaliações e estética íntima',
-    image: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1000&q=80',
+    id: 'photo-espera',
+    title: 'Sala de Espera Aconchegante',
+    description: 'Ambiente tranquilo e relaxante para o seu bem-estar antes do atendimento',
+    image: '/assets/sala-de-espera.webp',
   },
   {
-    id: 'photo-detalhes',
-    title: 'Cuidado em Cada Detalhe',
-    description: 'Aromatização exclusiva, som ambiente relaxante e privacidade total',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80',
+    id: 'photo-cafe',
+    title: 'Espaço Café & Boas-Vindas',
+    description: 'Café expresso e atendimento exclusivo preparado para sua visita',
+    image: '/assets/area-de-cafe-cba.webp',
+  },
+  {
+    id: 'photo-consultorio-atendimento',
+    title: 'Consultório de Avaliação',
+    description: 'Espaço privativo e reservado para diagnósticos e estética individualizada',
+    image: '/assets/consultorio-cba.webp',
+  },
+  {
+    id: 'photo-banheiro',
+    title: 'Espaço & Conforto',
+    description: 'Lavabo e instalações completas com máximo cuidado em cada detalhe',
+    image: '/assets/banheiro.webp',
   }
 ];

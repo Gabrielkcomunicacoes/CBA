@@ -125,11 +125,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSpaceModal, onOp
 
           {/* Right Column: Editorial Visual Composition */}
           <div className="lg:col-span-6 xl:col-span-5 relative flex justify-center lg:justify-end mt-4 lg:mt-0">
-            {/* Organic Fluid Shape Layer Behind */}
-            <div className="absolute -top-6 -right-6 w-full h-full max-w-[480px] bg-gradient-to-tr from-[#D8CAC0] to-[#EBE2D7] rounded-[52%_48%_60%_40%/45%_55%_45%_55%] -z-10 opacity-70 transform rotate-3" />
+            {/* Architectural Frame Layer Behind */}
+            <div className="absolute -top-4 -right-4 w-full h-full max-w-[460px] bg-gradient-to-tr from-[#D8CAC0] to-[#EBE2D7] rounded-[40px] -z-10 opacity-60 border border-[#FAF7F2]" />
 
-            {/* Main Portrait with Soft Organic Mask */}
-            <div className="relative w-full max-w-[440px] aspect-[4/5] rounded-[48px_48px_48px_48px] overflow-hidden shadow-2xl border-4 border-[#FAF7F2]">
+            {/* Main Portrait with Clean Luxury Framing */}
+            <div className="relative w-full max-w-[440px] aspect-[4/5] rounded-[36px] overflow-hidden shadow-2xl border-4 border-[#FAF7F2] bg-[#EFE7DC]">
               <img
                 src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1000&q=85"
                 alt="Mulher madura e elegante com pele luminosa e natural - Beleza Atual"
@@ -148,7 +148,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSpaceModal, onOp
             >
               <div className="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-[#E8DCD1]">
                 <img
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=300&q=80"
+                  src="/assets/recepcao-cba.webp"
                   alt="Clínica Beleza Atual São Bernardo do Campo"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />

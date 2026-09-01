@@ -31,8 +31,8 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
             {/* Top image */}
             <div className="relative h-64 sm:h-72 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1512290900672-1f4a9cebc174?auto=format&fit=crop&w=800&q=80"
-                alt="Tratamentos Faciais - Beleza Atual"
+                src="/assets/harmonizacao-facial.webp"
+                alt="Tratamentos Faciais e Harmonização - Beleza Atual"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#F4EDE4] via-transparent to-transparent" />
@@ -97,8 +97,8 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
             {/* Top image */}
             <div className="relative h-64 sm:h-72 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80"
-                alt="Tratamentos Corporais - Beleza Atual"
+                src="/assets/estetica-corporal.webp"
+                alt="Tratamentos de Estética Corporal - Beleza Atual"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#F4EDE4] via-transparent to-transparent" />

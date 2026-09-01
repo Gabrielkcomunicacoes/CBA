@@ -65,8 +65,8 @@ export const FeaturedTreatmentsSection: React.FC<FeaturedTreatmentsSectionProps>
               <div className="lg:col-span-5 relative">
                 <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-xl border border-[#FAF7F2]/15">
                   <img
-                    src="https://images.unsplash.com/photo-1512290900672-1f4a9cebc174?auto=format&fit=crop&w=800&q=80"
-                    alt="Fios de Tração Facial - Beleza Atual"
+                    src="/assets/rejuvenescimento.webp"
+                    alt="Fios de Tração e Rejuvenescimento Facial - Beleza Atual"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute top-3 left-3 bg-[#2A0E12]/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#C2A27A] uppercase tracking-wider border border-[#FAF7F2]/10">
@@ -196,8 +196,8 @@ export const FeaturedTreatmentsSection: React.FC<FeaturedTreatmentsSectionProps>
               <div className="lg:col-span-5 relative order-1 lg:order-2">
                 <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-xl border border-[#FAF7F2]/15">
                   <img
-                    src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
-                    alt="Preenchimento Facial - Beleza Atual"
+                    src="/assets/harmonizacao-facial.webp"
+                    alt="Preenchimento e Harmonização Facial - Beleza Atual"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute top-3 left-3 bg-[#2A0E12]/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#C2A27A] uppercase tracking-wider border border-[#FAF7F2]/10">

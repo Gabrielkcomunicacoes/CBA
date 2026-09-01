@@ -13,23 +13,23 @@ export const IdentificationSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Left: Soft Organic Oval Photo */}
+          {/* Left: Clean Straight Luxury Framed Photo */}
           <div className="lg:col-span-5 flex justify-center order-2 lg:order-1">
             <div className="relative w-full max-w-[380px]">
-              {/* Decorative accent curve backdrop */}
-              <div className="absolute -inset-4 bg-[#F4EDE4] rounded-[60%_40%_55%_45%/45%_55%_45%_55%] -z-10 transform -rotate-6" />
+              {/* Subtle architectural border accent */}
+              <div className="absolute -inset-2 bg-[#F4EDE4] rounded-3xl -z-10 border border-[#E8DCD1]" />
               
-              <div className="w-full aspect-[4/5] rounded-[60%_40%_55%_45%/45%_55%_45%_55%] overflow-hidden shadow-xl border-4 border-[#FAF7F2]">
+              <div className="w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-xl border-4 border-[#FAF7F2] bg-[#F4EDE4]">
                 <img
-                  src="https://images.unsplash.com/photo-1512290900672-1f4a9cebc174?auto=format&fit=crop&w=800&q=80"
-                  alt="Cuidado com a pele e naturalidade - Beleza Atual"
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                  src="/assets/rejuvenescimento.webp"
+                  alt="Rejuvenescimento e cuidado com a pele com naturalidade - Beleza Atual"
+                  className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
               </div>
 
               {/* Floating micro quote badge */}
-              <div className="absolute -bottom-4 right-2 sm:-right-4 bg-[#FAF7F2] border border-[#E8DCD1] p-3.5 rounded-2xl shadow-lg max-w-[210px]">
+              <div className="absolute -bottom-4 right-2 sm:-right-4 bg-[#FAF7F2] border border-[#E8DCD1] p-3.5 rounded-2xl shadow-lg max-w-[210px] z-10">
                 <div className="flex items-center gap-2 text-[#6D242C] mb-1">
                   <HeartHandshake className="w-4 h-4" />
                   <span className="text-[11px] font-bold tracking-wider uppercase font-sans">Sem exageros</span>
