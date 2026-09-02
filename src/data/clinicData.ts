@@ -54,7 +54,7 @@ export const getWhatsAppLink = (originContext?: string, customMessage?: string):
         text = 'Olá! Gostaria de agendar uma avaliação com o Dr. Deli Brito.';
         break;
       case 'luciana-freire':
-        text = 'Olá! Gostaria de agendar uma avaliação com a especialista Luciana Freire.';
+        text = 'Olá! Gostaria de falar com a equipe da fundadora Luciana Freire sobre os tratamentos da Beleza Atual.';
         break;
       case 'facilidades':
         text = 'Olá! Gostaria de saber mais sobre as condições de parcelamento em 10x e desconto no PIX para tratamentos.';
@@ -251,30 +251,31 @@ export const PROFESSIONALS: Professional[] = [
   {
     id: 'luciana-freire',
     name: 'Luciana Freire',
-    badge: 'ESPECIALISTA EM ESTÉTICA',
-    roleTitle: 'FARMACÊUTICA ESTETA & COSMETÓLOGA',
-    title: 'Especialista em Estética Avançada e Cosmetologia',
-    registration: 'CRF-SP 45.891',
+    badge: 'FUNDADORA',
+    roleTitle: 'FUNDADORA DA BELEZA ATUAL',
+    title: 'Fundadora da Revista e do Centro de Estética Beleza Atual',
+    registration: 'Fundadora & Gestão Consultiva',
     image: '/assets/luciana-freire.webp',
-    experience: '+10 anos de experiência clínica',
+    experience: 'Origem no Grupo Go Where • Fundadora da Revista Beleza Atual',
     instagram: '@belezaatual.estetica',
     instagramUrl: 'https://instagram.com/belezaatual.estetica',
-    bio: 'Com mais de uma década de dedicação ao cuidado da pele e do corpo, Luciana Freire é reconhecida pelo acolhimento caloroso e pelo rigor técnico. Ela lidera protocolos personalizados que combinam ciência e bem-estar para devolver a confiança de cada pessoa.',
+    bio: 'Iniciou sua trajetória no conceituado Grupo Go Where e fundou a conceituada Revista Beleza Atual, cobrindo tendências mundiais e os maiores congressos do setor. Nos últimos seis anos atuou diretamente na gestão comercial e atendimento consultivo de clínicas, concebendo o Centro de Estética Beleza Atual com foco em ética, acolhimento e resultados naturais.',
     education: [
-      'Graduação em Farmácia com Habilitação em Estética',
-      'Pós-graduação em Cosmetologia Clínica e Dermatocosmética'
+      'Grupo Go Where (Origem e mercado da beleza)',
+      'Fundadora da Revista Beleza Atual (Cobertura de inovações mundiais)',
+      'Gestão Comercial e Atendimento Consultivo de Clínicas'
     ],
     specialties: [
-      'Especialista em Estética Avançada e Saúde Integrativa',
-      'Pós-graduada em Cosmetologia Clínica e Peelings Químicos',
-      'Referência em Protocolos de Estética Íntima e Regenerativa',
-      'Consultora em Terapia Anti-Aging e Rejuvenescimento Facial'
+      'Origem no mercado de beleza com grandes marcas e especialistas',
+      'Fundação e direção editorial da Revista Beleza Atual',
+      'Gestão comercial e atendimento consultivo humanizado de clínicas',
+      'Idealizadora do Centro de Estética Beleza Atual'
     ],
     credentials: [
-      'Graduação em Farmácia com Habilitação em Estética',
-      'Pós-graduação em Cosmetologia e Dermatocosmética Aplicada',
-      'Capacitação em Tratamentos Íntimos Femininos e Masculinos',
-      'Pesquisadora de novos ativos e protocolos de bioestímulo tecidual'
+      'Início de carreira no renomado Grupo Go Where',
+      'Fundadora da Revista Beleza Atual com cobertura de congressos globais',
+      'Últimos 6 anos dedicados à gestão consultiva e atendimento ético de clínicas',
+      'Fundadora do Centro de Estética Beleza Atual em São Bernardo do Campo'
     ]
   }
 ];
