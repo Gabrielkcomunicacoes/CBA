@@ -128,6 +128,7 @@ export const InteractiveAssessmentModal: React.FC<InteractiveAssessmentModalProp
                 { id: 'Facial', label: 'Rosto (Flacidez, sustentação, rugas, contorno)', sub: 'Fios, preenchimento, botox, bioestimuladores' },
                 { id: 'Corporal', label: 'Corpo (Flacidez, gordura localizada, drenagem)', sub: 'Remodelagem corporal e firmeza' },
                 { id: 'Estética Íntima', label: 'Estética Íntima (Feminina ou Masculina)', sub: 'Atendimento privativo com sigilo e discrição' },
+                { id: 'Estética Masculina', label: 'Estética Masculina (Rosto, corpo ou íntimo)', sub: 'Protocolos personalizados para anatomia masculina' },
                 { id: 'Global', label: 'Ainda não tenho certeza (Quero avaliação completa)', sub: 'Diagnóstico geral com os profissionais' },
               ].map((opt) => (
                 <button

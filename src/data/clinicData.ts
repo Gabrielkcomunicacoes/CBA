@@ -41,6 +41,9 @@ export const getWhatsAppLink = (originContext?: string, customMessage?: string):
       case 'intimo':
         text = 'Olá! Gostaria de conversar com total discrição sobre os tratamentos de estética íntima.';
         break;
+      case 'masculino':
+        text = 'Olá! Gostaria de informações sobre os tratamentos de estética masculina (facial, corporal e íntima) na Beleza Atual.';
+        break;
       case 'fios':
         text = 'Olá! Gostaria de saber mais sobre o procedimento de Fios de Tração e agendar uma avaliação com os profissionais.';
         break;
@@ -89,7 +92,7 @@ export const TREATMENTS: Treatment[] = [
     sessionDuration: '45 a 60 minutos',
     recoveryTime: 'Retorno às atividades em 24h a 48h',
     tag: 'Destaque Facial',
-    image: '/assets/rejuvenescimento.webp',
+    image: '/assets/1.webp',
   },
   {
     id: 'preenchimento-facial',
@@ -109,7 +112,7 @@ export const TREATMENTS: Treatment[] = [
     sessionDuration: '40 a 60 minutos',
     recoveryTime: 'Imediato, com mínimos cuidados pós',
     tag: 'Harmonização Suave',
-    image: '/assets/harmonizacao-facial.webp',
+    image: '/assets/2.webp',
   },
   {
     id: 'estetica-intima',
@@ -129,11 +132,33 @@ export const TREATMENTS: Treatment[] = [
     sessionDuration: '30 a 50 minutos',
     recoveryTime: 'Rápido, com orientações personalizadas',
     tag: 'Privacidade & Cuidado',
-    image: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1000&q=80',
+    image: '/assets/3.webp',
+  },
+  {
+    id: 'estetica-masculina',
+    category: 'masculino',
+    number: '04',
+    featured: true,
+    title: 'Estética Masculina Personalizada',
+    subtitle: 'Alinhamento mandibular, rejuvenescimento e discrição',
+    description: 'Protocolos faciais, corporais e íntimos desenvolvidos especificamente para a anatomia e espessura da pele masculina, preservando traços fortes e autênticos.',
+    benefits: [
+      'Definição do ângulo mandibular e queixo sem artificialidade',
+      'Atenuação de linhas de expressão e cansaço no olhar',
+      'Bioestímulo e firmeza preservando a textura natural da pele',
+      'Atendimento 100% privativo com planejamento individual'
+    ],
+    indications: ['Contorno mandibular indefinido', 'Linhas de expressão na testa e olhos', 'Flacidez facial ou corporal', 'Cuidado íntimo masculino'],
+    sessionDuration: '40 a 60 minutos',
+    recoveryTime: 'Imediato, sem afastamento das atividades',
+    tag: 'Foco Masculino',
+    image: '/assets/4.webp',
   },
   {
     id: 'bioestimuladores',
     category: 'facial',
+    number: '05',
+    featured: true,
     title: 'Bioestimuladores de Colágeno',
     subtitle: 'Firmeza e densidade dérmica de dentro para fora',
     description: 'Radiesse e Sculptra aplicados estrategicamente para devolver a espessura dérmica, prevenir o envelhecimento e tratar a perda de sustentação.',
@@ -147,7 +172,7 @@ export const TREATMENTS: Treatment[] = [
     sessionDuration: '45 minutos',
     recoveryTime: 'Imediato',
     tag: 'Colágeno',
-    image: '/assets/rejuvenescimento.webp',
+    image: '/assets/5.webp',
   },
   {
     id: 'toxina-botulinica',
@@ -230,7 +255,7 @@ export const PROFESSIONALS: Professional[] = [
     roleTitle: 'FARMACÊUTICA ESTETA & COSMETÓLOGA',
     title: 'Especialista em Estética Avançada e Cosmetologia',
     registration: 'CRF-SP 45.891',
-    image: 'https://images.unsplash.com/photo-1594824813593-3920703f8a48?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/luciana-freire.webp',
     experience: '+10 anos de experiência clínica',
     instagram: '@belezaatual.estetica',
     instagramUrl: 'https://instagram.com/belezaatual.estetica',

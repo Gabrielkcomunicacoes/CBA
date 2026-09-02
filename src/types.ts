@@ -1,6 +1,6 @@
 export interface Treatment {
   id: string;
-  category: 'facial' | 'corporal' | 'intimo';
+  category: 'facial' | 'corporal' | 'intimo' | 'masculino';
   title: string;
   subtitle: string;
   description: string;

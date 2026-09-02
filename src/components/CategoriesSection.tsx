@@ -1,10 +1,10 @@
 import React from 'react';
-import { ArrowRight, Sparkles, Shield, Heart } from 'lucide-react';
+import { ArrowRight, Sparkles, Shield, Heart, User } from 'lucide-react';
 import { getWhatsAppLink } from '../data/clinicData';
 import { AsymmetricWaveTransition } from './OrganicWaves';
 
 interface CategoriesSectionProps {
-  onSelectCategory?: (category: 'facial' | 'corporal' | 'intimo') => void;
+  onSelectCategory?: (category: 'facial' | 'corporal' | 'intimo' | 'masculino') => void;
 }
 
 export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCategory }) => {
@@ -23,13 +23,13 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
           </h2>
         </div>
 
-        {/* 3 Asymmetric Visual Areas */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        {/* 4 Pillars Grid: Facial, Corporal, Estética Íntima, Estética Masculina */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           
-          {/* 1. FACIAL (Vertical Tall Area - 4 cols on lg) */}
-          <div className="lg:col-span-4 group relative bg-[#F4EDE4] rounded-3xl overflow-hidden border border-[#E8DCD1] flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-500">
+          {/* 1. FACIAL */}
+          <div className="group relative bg-[#F4EDE4] rounded-3xl overflow-hidden border border-[#E8DCD1] flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-500">
             {/* Top image */}
-            <div className="relative h-64 sm:h-72 overflow-hidden">
+            <div className="relative h-60 sm:h-64 overflow-hidden">
               <img
                 src="/assets/harmonizacao-facial.webp"
                 alt="Tratamentos Faciais e Harmonização - Beleza Atual"
@@ -45,7 +45,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
             </div>
 
             {/* Content body */}
-            <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+            <div className="p-6 flex-1 flex flex-col justify-between">
               <div>
                 <h3 className="font-serif-luxury text-2xl font-medium text-[#2A0E12] mb-2">
                   Facial
@@ -62,7 +62,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#6D242C]" />
-                    <span>Preenchimento & harmonização sutil</span>
+                    <span>Preenchimento & harmonização</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#6D242C]" />
@@ -74,7 +74,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#6D242C]" />
-                    <span>Peelings e revitalização profunda</span>
+                    <span>Peelings e revitalização</span>
                   </li>
                 </ul>
               </div>
@@ -92,10 +92,76 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
             </div>
           </div>
 
-          {/* 2. CORPORAL (Horizontal balanced area - 4 cols on lg) */}
-          <div className="lg:col-span-4 group relative bg-[#F4EDE4] rounded-3xl overflow-hidden border border-[#E8DCD1] flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-500">
+          {/* 2. ESTÉTICA ÍNTIMA (Contrasting Dark Wine Luxury Block) */}
+          <div className="group relative bg-gradient-to-b from-[#3E1418] to-[#250C0F] text-[#FAF7F2] rounded-3xl overflow-hidden border border-[#5A1E24] flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all duration-500">
             {/* Top image */}
-            <div className="relative h-64 sm:h-72 overflow-hidden">
+            <div className="relative h-60 sm:h-64 overflow-hidden">
+              <img
+                src="/assets/estetica-intima.webp"
+                alt="Estética Íntima com Privacidade - Beleza Atual"
+                className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#3E1418] via-[#3E1418]/40 to-transparent" />
+              <div className="absolute top-4 left-4">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#FAF7F2]/15 backdrop-blur-md text-[#E8DCD1] border border-[#FAF7F2]/20 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-xs">
+                  <Shield className="w-3 h-3 text-[#C2A27A]" />
+                  Privacidade Total
+                </span>
+              </div>
+            </div>
+
+            {/* Content body */}
+            <div className="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="font-serif-luxury text-2xl font-medium text-[#FAF7F2] mb-2">
+                  Estética Íntima
+                </h3>
+                <p className="text-xs sm:text-sm text-[#D8CAC0] mb-4 leading-relaxed">
+                  Cuidado íntimo feminino e masculino com máxima privacidade, discrição e acolhimento individualizado.
+                </p>
+
+                {/* Bullets */}
+                <ul className="space-y-2 mb-6 text-xs text-[#E8DCD1]">
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
+                    <span>Preenchimento e volumização</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
+                    <span>Clareamento íntimo seguro</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
+                    <span>Bioestímulo e melhora de turgor</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
+                    <span>Consultório 100% privativo</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
+                    <span>Sigilo absoluto e ética</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Action */}
+              <a
+                href={getWhatsAppLink('intimo')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-3 px-4 bg-[#FAF7F2] hover:bg-[#C2A27A] text-[#2A0E12] hover:text-[#2A0E12] rounded-full text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 shadow-md"
+              >
+                <span>Conversar com discrição</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
+
+          {/* 3. CORPORAL */}
+          <div className="group relative bg-[#F4EDE4] rounded-3xl overflow-hidden border border-[#E8DCD1] flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-500">
+            {/* Top image */}
+            <div className="relative h-60 sm:h-64 overflow-hidden">
               <img
                 src="/assets/estetica-corporal.webp"
                 alt="Tratamentos de Estética Corporal - Beleza Atual"
@@ -111,7 +177,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
             </div>
 
             {/* Content body */}
-            <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+            <div className="p-6 flex-1 flex flex-col justify-between">
               <div>
                 <h3 className="font-serif-luxury text-2xl font-medium text-[#2A0E12] mb-2">
                   Corporal
@@ -124,7 +190,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
                 <ul className="space-y-2 mb-6 text-xs text-[#524741]">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#B26450]" />
-                    <span>Tratamento para flacidez dérmica</span>
+                    <span>Tratamento para flacidez</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#B26450]" />
@@ -132,15 +198,15 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#B26450]" />
-                    <span>Drenagem linfática pós & bem-estar</span>
+                    <span>Drenagem pós & relaxamento</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#B26450]" />
-                    <span>Massagem modeladora & radiofrequência</span>
+                    <span>Massagem e radiofrequência</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#B26450]" />
-                    <span>Protocolos de relaxamento e contorno</span>
+                    <span>Contorno e tônus corporal</span>
                   </li>
                 </ul>
               </div>
@@ -158,67 +224,67 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
             </div>
           </div>
 
-          {/* 3. ESTÉTICA ÍNTIMA (Contrasting Dark Luxury Block - 4 cols on lg) */}
-          <div className="lg:col-span-4 group relative bg-gradient-to-b from-[#3E1418] to-[#250C0F] text-[#FAF7F2] rounded-3xl overflow-hidden border border-[#5A1E24] flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all duration-500">
+          {/* 4. ESTÉTICA MASCULINA (Contrasting Dark Charcoal/Bronze Luxury Block) */}
+          <div className="group relative bg-gradient-to-b from-[#2D2321] to-[#1C1513] text-[#FAF7F2] rounded-3xl overflow-hidden border border-[#52413A] flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all duration-500">
             {/* Top image */}
-            <div className="relative h-64 sm:h-72 overflow-hidden">
+            <div className="relative h-60 sm:h-64 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80"
-                alt="Estética Íntima com Privacidade - Beleza Atual"
-                className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                src="/assets/estetica-masculina.webp"
+                alt="Estética Masculina Personalizada - Beleza Atual"
+                className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#3E1418] via-[#3E1418]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#2D2321] via-[#2D2321]/40 to-transparent" />
               <div className="absolute top-4 left-4">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#FAF7F2]/15 backdrop-blur-md text-[#E8DCD1] border border-[#FAF7F2]/20 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-xs">
-                  <Shield className="w-3 h-3 text-[#C2A27A]" />
-                  Privacidade Total
+                  <User className="w-3 h-3 text-[#C2A27A]" />
+                  Foco Masculino
                 </span>
               </div>
             </div>
 
             {/* Content body */}
-            <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+            <div className="p-6 flex-1 flex flex-col justify-between">
               <div>
                 <h3 className="font-serif-luxury text-2xl font-medium text-[#FAF7F2] mb-2">
-                  Estética Íntima
+                  Estética Masculina
                 </h3>
                 <p className="text-xs sm:text-sm text-[#D8CAC0] mb-4 leading-relaxed">
-                  Cuidado íntimo com máxima privacidade, informação clara e acolhimento individualizado.
+                  Protocolos pensados sob medida para a anatomia e pele masculina, valorizando traços autênticos e discretos.
                 </p>
 
                 {/* Bullets */}
                 <ul className="space-y-2 mb-6 text-xs text-[#E8DCD1]">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
-                    <span>Preenchimento íntimo (feminino e masculino)</span>
+                    <span>Definição de mandíbula & queixo</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
-                    <span>Clareamento íntimo seguro</span>
+                    <span>Botox e bioestimuladores sutis</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
-                    <span>Bioestímulo e melhora de turgor</span>
+                    <span>Olheiras e rejuvenescimento facial</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
-                    <span>Consultório privativo com sigilo absoluto</span>
+                    <span>Protocolos íntimos masculinos</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
-                    <span>Outros protocolos após avaliação</span>
+                    <span>Atendimento com total privacidade</span>
                   </li>
                 </ul>
               </div>
 
               {/* Action */}
               <a
-                href={getWhatsAppLink('intimo')}
+                href={getWhatsAppLink('masculino')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 px-4 bg-[#FAF7F2] hover:bg-[#C2A27A] text-[#2A0E12] hover:text-[#2A0E12] rounded-full text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 shadow-md"
+                className="w-full py-3 px-4 bg-[#C2A27A] hover:bg-[#FAF7F2] text-[#2A0E12] rounded-full text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 shadow-md"
               >
-                <span>Conversar com discrição</span>
+                <span>Conhecer protocolos</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </a>
             </div>

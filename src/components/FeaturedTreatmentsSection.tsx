@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Check, Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
+import { MessageCircle, Check, Sparkles, ArrowRight, ShieldCheck, User } from 'lucide-react';
 import { getWhatsAppLink } from '../data/clinicData';
 import { Treatment } from '../types';
 
@@ -65,7 +65,7 @@ export const FeaturedTreatmentsSection: React.FC<FeaturedTreatmentsSectionProps>
               <div className="lg:col-span-5 relative">
                 <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-xl border border-[#FAF7F2]/15">
                   <img
-                    src="/assets/rejuvenescimento.webp"
+                    src="/assets/1.webp"
                     alt="Fios de Tração e Rejuvenescimento Facial - Beleza Atual"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -196,7 +196,7 @@ export const FeaturedTreatmentsSection: React.FC<FeaturedTreatmentsSectionProps>
               <div className="lg:col-span-5 relative order-1 lg:order-2">
                 <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-xl border border-[#FAF7F2]/15">
                   <img
-                    src="/assets/harmonizacao-facial.webp"
+                    src="/assets/2.webp"
                     alt="Preenchimento e Harmonização Facial - Beleza Atual"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -220,7 +220,7 @@ export const FeaturedTreatmentsSection: React.FC<FeaturedTreatmentsSectionProps>
               {/* Background Atmospheric Image */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=80"
+                  src="/assets/3.webp"
                   alt="Estética Íntima com Privacidade - Beleza Atual"
                   className="w-full h-full object-cover object-center transform scale-105 filter brightness-40"
                 />
@@ -267,6 +267,162 @@ export const FeaturedTreatmentsSection: React.FC<FeaturedTreatmentsSectionProps>
                     >
                       Ver detalhes
                     </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 04: ESTÉTICA MASCULINA (Image Left, Content Right) */}
+          <div className="relative group">
+            {/* Big Editorial Number in Background */}
+            <div className="absolute -top-10 -right-6 sm:-right-10 text-[100px] sm:text-[140px] font-serif-luxury text-[#FAF7F2]/5 select-none pointer-events-none font-bold leading-none text-right">
+              04
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center relative z-10 bg-[#351217]/70 p-6 sm:p-10 rounded-3xl border border-[#FAF7F2]/10 backdrop-blur-xs hover:border-[#C2A27A]/30 transition-all duration-500">
+              {/* Left: Image with organic rounded corners */}
+              <div className="lg:col-span-5 relative">
+                <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-xl border border-[#FAF7F2]/15">
+                  <img
+                    src="/assets/4.webp"
+                    alt="Estética Masculina Personalizada - Beleza Atual"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute top-3 left-3 bg-[#2A0E12]/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#C2A27A] uppercase tracking-wider border border-[#FAF7F2]/10 flex items-center gap-1.5">
+                    <User className="w-3 h-3 text-[#C2A27A]" />
+                    Anatomia Masculina
+                  </div>
+                </div>
+              </div>
+
+              {/* Right: Content */}
+              <div className="lg:col-span-7 flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-sans text-[#C2A27A] font-semibold tracking-widest uppercase mb-1">
+                    Procedimento 04
+                  </div>
+                  <h3 className="font-serif-luxury text-2xl sm:text-3xl lg:text-4xl font-normal text-[#FAF7F2] mb-3">
+                    Estética Masculina Personalizada
+                  </h3>
+                  <p className="text-sm sm:text-base text-[#D8CAC0] mb-6 leading-relaxed">
+                    Planejamento exclusivo respeitando a estrutura óssea e as características da pele masculina. Resultados que valorizam os contornos sem exageros ou descaracterização dos traços.
+                  </p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-8">
+                    <div className="flex items-center gap-2 text-xs text-[#FAF7F2]/90">
+                      <span className="w-4 h-4 rounded-full bg-[#C2A27A]/20 flex items-center justify-center text-[#C2A27A] shrink-0">✓</span>
+                      <span>Definição de mandíbula e queixo</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-[#FAF7F2]/90">
+                      <span className="w-4 h-4 rounded-full bg-[#C2A27A]/20 flex items-center justify-center text-[#C2A27A] shrink-0">✓</span>
+                      <span>Suavização de linhas sem congelar</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-[#FAF7F2]/90">
+                      <span className="w-4 h-4 rounded-full bg-[#C2A27A]/20 flex items-center justify-center text-[#C2A27A] shrink-0">✓</span>
+                      <span>Bioestímulo e firmeza da pele</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-[#FAF7F2]/90">
+                      <span className="w-4 h-4 rounded-full bg-[#C2A27A]/20 flex items-center justify-center text-[#C2A27A] shrink-0">✓</span>
+                      <span>Protocolos íntimos e sigilo total</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4">
+                  <a
+                    href={getWhatsAppLink('masculino')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-[#C2A27A] hover:bg-[#FAF7F2] text-[#2A0E12] rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-2 transition-colors duration-300 shadow-md"
+                  >
+                    <span>Agendar avaliação masculina</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+
+                  <button
+                    onClick={() => onOpenTreatmentModal('estetica-masculina')}
+                    className="px-5 py-3 bg-transparent hover:bg-[#FAF7F2]/10 text-[#FAF7F2] border border-[#FAF7F2]/20 rounded-full text-xs font-medium uppercase tracking-wider transition-colors cursor-pointer"
+                  >
+                    Saber detalhes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 05: BIOESTIMULADORES DE COLÁGENO (Content Left, Image Right) */}
+          <div className="relative group">
+            {/* Big Editorial Number in Background */}
+            <div className="absolute -top-10 -left-6 sm:-left-10 text-[100px] sm:text-[140px] font-serif-luxury text-[#FAF7F2]/5 select-none pointer-events-none font-bold leading-none">
+              05
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center relative z-10 bg-[#351217]/70 p-6 sm:p-10 rounded-3xl border border-[#FAF7F2]/10 backdrop-blur-xs hover:border-[#C2A27A]/30 transition-all duration-500">
+              {/* Left: Content */}
+              <div className="lg:col-span-7 flex flex-col justify-between order-2 lg:order-1">
+                <div>
+                  <div className="text-xs font-sans text-[#C2A27A] font-semibold tracking-widest uppercase mb-1">
+                    Procedimento 05
+                  </div>
+                  <h3 className="font-serif-luxury text-2xl sm:text-3xl lg:text-4xl font-normal text-[#FAF7F2] mb-3">
+                    Bioestimuladores de Colágeno
+                  </h3>
+                  <p className="text-sm sm:text-base text-[#D8CAC0] mb-6 leading-relaxed">
+                    Estimulação biológica profunda que recupera a densidade, a elasticidade e o viço natural da pele com elegância, sem alterar seus volumes ou traços de forma artificial.
+                  </p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-8">
+                    <div className="flex items-center gap-2 text-xs text-[#FAF7F2]/90">
+                      <span className="w-4 h-4 rounded-full bg-[#C2A27A]/20 flex items-center justify-center text-[#C2A27A] shrink-0">✓</span>
+                      <span>Pele visivelmente mais firme e luminosa</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-[#FAF7F2]/90">
+                      <span className="w-4 h-4 rounded-full bg-[#C2A27A]/20 flex items-center justify-center text-[#C2A27A] shrink-0">✓</span>
+                      <span>Bioestímulo celular contínuo e gradual</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-[#FAF7F2]/90">
+                      <span className="w-4 h-4 rounded-full bg-[#C2A27A]/20 flex items-center justify-center text-[#C2A27A] shrink-0">✓</span>
+                      <span>Preserva a autenticidade da sua expressão</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-[#FAF7F2]/90">
+                      <span className="w-4 h-4 rounded-full bg-[#C2A27A]/20 flex items-center justify-center text-[#C2A27A] shrink-0">✓</span>
+                      <span>Rosto, pescoço e colo revitalizados</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4">
+                  <a
+                    href={getWhatsAppLink('bioestimulador')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-[#C2A27A] hover:bg-[#FAF7F2] text-[#2A0E12] rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-2 transition-colors duration-300 shadow-md"
+                  >
+                    <span>Entender se é indicado para mim</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+
+                  <button
+                    onClick={() => onOpenTreatmentModal('bioestimuladores')}
+                    className="px-5 py-3 bg-transparent hover:bg-[#FAF7F2]/10 text-[#FAF7F2] border border-[#FAF7F2]/20 rounded-full text-xs font-medium uppercase tracking-wider transition-colors cursor-pointer"
+                  >
+                    Saber detalhes
+                  </button>
+                </div>
+              </div>
+
+              {/* Right: Image */}
+              <div className="lg:col-span-5 relative order-1 lg:order-2">
+                <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-xl border border-[#FAF7F2]/15">
+                  <img
+                    src="/assets/5.webp"
+                    alt="Bioestimuladores de Colágeno e Rejuvenescimento - Beleza Atual"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute top-3 left-3 bg-[#2A0E12]/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#C2A27A] uppercase tracking-wider border border-[#FAF7F2]/10 flex items-center gap-1.5">
+                    <Sparkles className="w-3 h-3 text-[#C2A27A]" />
+                    Estímulo de Colágeno
                   </div>
                 </div>
               </div>

@@ -100,14 +100,26 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenAssessme
                 />
               </div>
 
-              {/* Floating review highlight */}
-              <div className="absolute -bottom-2 -left-2 sm:left-0 bg-[#FAF7F2] text-[#2A0E12] p-3.5 rounded-2xl shadow-xl max-w-[210px] border border-[#E8DCD1]">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#6D242C] block">
-                  São Bernardo do Campo
-                </span>
-                <p className="text-[11px] font-serif-luxury font-medium text-[#2A0E12] mt-0.5">
-                  "Um olhar cuidadoso para quem você é."
-                </p>
+              {/* Floating CBA Logo & clinic badge */}
+              <div className="absolute -bottom-3 -left-2 sm:-left-4 bg-[#FAF7F2] text-[#2A0E12] p-3 sm:p-3.5 rounded-2xl shadow-2xl border border-[#E8DCD1] flex items-center gap-3.5 max-w-[270px]">
+                <div className="w-12 h-12 rounded-xl bg-[#2A0E12] p-1.5 flex items-center justify-center shrink-0 border border-[#C2A27A]/40 shadow-sm">
+                  <img
+                    src="/assets/logo-transparente.webp"
+                    alt="Logo CBA - Clínica Beleza Atual"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-serif-luxury text-sm font-semibold text-[#2A0E12] leading-none">
+                    Clínica Beleza Atual
+                  </span>
+                  <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-[#6D242C] mt-1">
+                    CBA • São Bernardo do Campo
+                  </span>
+                  <p className="text-[10px] text-[#5A524D] italic mt-0.5 leading-tight">
+                    "Um olhar cuidadoso para quem você é."
+                  </p>
+                </div>
               </div>
             </div>
           </div>

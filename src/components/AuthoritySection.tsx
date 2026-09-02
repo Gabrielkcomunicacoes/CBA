@@ -171,71 +171,142 @@ export const AuthoritySection: React.FC = () => {
           </div>
         ))}
 
-        {/* Secondary Professional Card: Luciana Freire */}
+        {/* Professional Card: Luciana Freire - Same dimensions & layout as Dr. Deli Brito, in elegant skin/blush tone */}
         {PROFESSIONALS.filter(p => p.id === 'luciana-freire').map((prof) => (
           <div
             key={prof.id}
-            className="mb-16 bg-[#F4EDE4] rounded-3xl sm:rounded-[32px] p-6 sm:p-8 border border-[#E8DCD1] shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col sm:flex-row gap-6 sm:gap-8 items-center sm:items-start group"
+            className="mb-16 bg-[#F6EAE4] text-[#2A0E12] rounded-3xl sm:rounded-[36px] p-6 sm:p-10 lg:p-12 border border-[#E8D7CD] shadow-xl relative overflow-hidden group"
           >
-            {/* Portrait image */}
-            <div className="relative w-44 sm:w-52 aspect-[3/4] rounded-2xl overflow-hidden shadow-md shrink-0 border-2 border-[#FAF7F2]">
-              <img
-                src={prof.image}
-                alt={`${prof.name} - ${prof.title}`}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                loading="lazy"
-              />
-              <div className="absolute top-2 left-2 bg-[#2A0E12]/80 backdrop-blur-xs px-2.5 py-0.5 rounded-full text-[10px] font-medium text-[#E8DCD1] border border-[#FAF7F2]/10">
-                {prof.registration}
-              </div>
-            </div>
+            {/* Soft ambient blush light glow */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#FAF7F2]/60 rounded-full blur-3xl pointer-events-none -z-0" />
+            <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#E8D7CD]/40 rounded-full blur-3xl pointer-events-none -z-0" />
 
-            {/* Professional details */}
-            <div className="flex-1 flex flex-col justify-between text-center sm:text-left">
-              <div>
-                <div className="inline-block text-[11px] font-bold text-[#6D242C] uppercase tracking-wider mb-1">
-                  {prof.experience}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+              
+              {/* Photo Column (5 cols) */}
+              <div className="lg:col-span-5 flex justify-center">
+                <div className="relative w-full max-w-[380px] aspect-[4/5] rounded-2xl sm:rounded-[28px] overflow-hidden shadow-xl border-4 border-[#FAF7F2] group-hover:border-[#E8D7CD] transition-all duration-500">
+                  <img
+                    src={prof.image}
+                    alt={`${prof.name} - ${prof.title}`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    style={{ objectPosition: 'center 80%' }}
+                    loading="lazy"
+                  />
+                  {/* Discreet registration tag */}
+                  <div className="absolute top-3 left-3 bg-[#2A0E12]/85 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-semibold text-[#FAF7F2] border border-[#FAF7F2]/20 shadow-xs">
+                    {prof.registration}
+                  </div>
                 </div>
-                <h3 className="font-serif-luxury text-2xl sm:text-3xl font-medium text-[#2A0E12] mb-1">
-                  {prof.name}
-                </h3>
-                <p className="text-xs text-[#8F7D73] font-medium mb-3">
-                  {prof.title} • {prof.registration}
-                </p>
-
-                <p className="text-xs sm:text-sm text-[#5A524D] leading-relaxed mb-4">
-                  {prof.bio}
-                </p>
-
-                {/* Specialties List */}
-                <ul className="space-y-1.5 mb-6 text-xs text-[#524741] text-left">
-                  {prof.specialties.slice(0, 3).map((spec, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#6D242C] shrink-0 mt-1.5" />
-                      <span>{spec}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
-                <button
-                  onClick={() => setSelectedProf(prof)}
-                  className="text-xs font-semibold text-[#6D242C] hover:text-[#44161C] flex items-center gap-1.5 group/btn cursor-pointer py-1"
-                >
-                  <span>Ver trajetória completa</span>
-                  <Plus className="w-3.5 h-3.5 group-hover/btn:rotate-90 transition-transform" />
-                </button>
+              {/* Info Column (7 cols) */}
+              <div className="lg:col-span-7 flex flex-col justify-between">
+                <div>
+                  {/* Eyebrow */}
+                  <span className="text-xs sm:text-sm font-bold tracking-[0.25em] uppercase text-[#8C3A45] block mb-2">
+                    {prof.badge || 'ESPECIALISTA & RESPONSÁVEL TÉCNICA'}
+                  </span>
 
-                <a
-                  href={getWhatsAppLink('luciana-freire')}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="sm:ml-auto px-5 py-2.5 bg-[#FAF7F2] hover:bg-[#6D242C] text-[#2A0E12] hover:text-[#FAF7F2] border border-[#D8CAC0] hover:border-[#6D242C] rounded-full text-xs font-semibold uppercase tracking-wider transition-colors shadow-2xs"
-                >
-                  Agendar com Luciana
-                </a>
+                  {/* Name */}
+                  <h3 className="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-medium text-[#2A0E12] mb-4 leading-tight">
+                    {prof.name}
+                  </h3>
+
+                  {/* Bio with bold highlight */}
+                  <p className="text-sm sm:text-base text-[#5A4B46] leading-relaxed mb-6">
+                    Com <strong className="text-[#2A0E12] font-semibold">+10 anos de atuação</strong> no cuidado da pele e do corpo, Luciana Freire é reconhecida pelo acolhimento caloroso e pelo rigor técnico. Ela lidera protocolos personalizados que combinam ciência e bem-estar para devolver a confiança e a beleza natural de cada pessoa.
+                  </p>
+
+                  {/* Instagram Link */}
+                  {prof.instagram && (
+                    <div className="mb-8">
+                      <a
+                        href={prof.instagramUrl || `https://instagram.com/${prof.instagram.replace('@', '')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-xs sm:text-sm text-[#8C3A45] hover:text-[#521C22] font-medium transition-colors group/insta"
+                      >
+                        <Instagram className="w-4 h-4 text-[#8C3A45] group-hover/insta:scale-110 transition-transform" />
+                        <span>Acompanhe no Instagram: <strong className="underline underline-offset-4">{prof.instagram}</strong></span>
+                      </a>
+                    </div>
+                  )}
+
+                  {/* 3 Credential Badges */}
+                  <div className="space-y-4 pt-2 border-t border-[#E8D7CD]">
+                    
+                    {/* Badge 1: Farmacêutica Esteta & Cosmetóloga */}
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-[#FAF7F2] text-[#8C3A45] flex items-center justify-center shrink-0 mt-0.5 border border-[#E8D7CD] shadow-2xs">
+                        <UserCheck className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#2A0E12]">
+                          FARMACÊUTICA ESTETA & COSMETÓLOGA
+                        </h4>
+                        <p className="text-xs text-[#6F5E56] mt-0.5">
+                          {prof.registration} &nbsp;•&nbsp; Pós-graduada em Cosmetologia Clínica
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Badge 2: Especialidades Clínicas */}
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-[#FAF7F2] text-[#8C3A45] flex items-center justify-center shrink-0 mt-0.5 border border-[#E8D7CD] shadow-2xs">
+                        <Award className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#2A0E12]">
+                          ESPECIALIDADES CLÍNICAS
+                        </h4>
+                        <p className="text-xs text-[#6F5E56] mt-0.5">
+                          Estética Avançada e Saúde Integrativa &nbsp;•&nbsp; Peelings Químicos
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Badge 3: Protocolos Exclusivos */}
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-[#FAF7F2] text-[#8C3A45] flex items-center justify-center shrink-0 mt-0.5 border border-[#E8D7CD] shadow-2xs">
+                        <GraduationCap className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#2A0E12]">
+                          PROTOCOLOS EXCLUSIVOS
+                        </h4>
+                        <p className="text-xs text-[#6F5E56] mt-0.5">
+                          Harmonização Corporal &nbsp;•&nbsp; Estética Íntima e Terapias Regenerativas
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/* Bottom Actions */}
+                <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 pt-6 border-t border-[#E8D7CD]">
+                  <a
+                    href={getWhatsAppLink('luciana-freire')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto px-7 py-3.5 bg-[#6D242C] hover:bg-[#521C22] text-[#FAF7F2] rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+                  >
+                    <span>Agendar com Luciana</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+
+                  <button
+                    onClick={() => setSelectedProf(prof)}
+                    className="text-xs text-[#6D242C] hover:text-[#2A0E12] font-semibold transition-colors flex items-center gap-1.5 cursor-pointer py-2"
+                  >
+                    <Plus className="w-3.5 h-3.5" />
+                    <span>Ver detalhes completos</span>
+                  </button>
+                </div>
+
               </div>
+
             </div>
           </div>
         ))}
@@ -301,6 +372,7 @@ export const AuthoritySection: React.FC = () => {
                 src={selectedProf.image}
                 alt={selectedProf.name}
                 className="w-16 h-16 rounded-full object-cover border-2 border-[#6D242C]"
+                style={{ objectPosition: selectedProf.id === 'luciana-freire' ? 'center 75%' : 'top' }}
               />
               <div>
                 <h4 className="font-serif-luxury text-2xl font-medium text-[#2A0E12]">
