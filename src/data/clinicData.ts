@@ -10,11 +10,12 @@ export const CLINIC_INFO = {
   neighborhood: 'Centro',
   zipCode: '09725-000',
   fullAddress: 'Rua Jurubatuba, 1350 - 8º andar, sala 803 - Centro, São Bernardo do Campo - SP',
-  phone: '(11) 98765-4321',
-  phoneClean: '5511987654321', // WhatsApp international format
+  phone: '(11) 94445-1058',
+  phoneClean: '5511944451058', // WhatsApp international format
   email: 'contato@belezaatualestetica.com.br',
   hours: 'Segunda a Sexta: 08h às 20h | Sábado: 08h às 14h',
-  instagram: '@belezaatual.estetica',
+  instagram: '@clinicabelezaatual',
+  instagramUrl: 'https://instagram.com/clinicabelezaatual',
   logo: '/assets/logo.jpg',
   logoTransparent: '/assets/logo-transparente.webp',
   googleMapsUrl: 'https://maps.google.com/?q=Rua+Jurubatuba,+1350+-+Centro,+Sao+Bernardo+do+Campo+-+SP',
@@ -257,8 +258,8 @@ export const PROFESSIONALS: Professional[] = [
     registration: 'Fundadora & Gestão Consultiva',
     image: '/assets/luciana-freire.webp',
     experience: 'Origem no Grupo Go Where • Fundadora da Revista Beleza Atual',
-    instagram: '@belezaatual.estetica',
-    instagramUrl: 'https://instagram.com/belezaatual.estetica',
+    instagram: '@clinicabelezaatual',
+    instagramUrl: 'https://instagram.com/clinicabelezaatual',
     bio: 'Iniciou sua trajetória no conceituado Grupo Go Where e fundou a conceituada Revista Beleza Atual, cobrindo tendências mundiais e os maiores congressos do setor. Nos últimos seis anos atuou diretamente na gestão comercial e atendimento consultivo de clínicas, concebendo o Centro de Estética Beleza Atual com foco em ética, acolhimento e resultados naturais.',
     education: [
       'Grupo Go Where (Origem e mercado da beleza)',

@@ -49,7 +49,7 @@ export const Footer: React.FC = () => {
                 <Phone className="w-4 h-4" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/clinicabelezaatual"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-[#FAF7F2]/10 hover:bg-[#C2A27A] hover:text-[#2A0E12] flex items-center justify-center text-[#FAF7F2] transition-colors"

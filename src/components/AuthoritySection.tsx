@@ -354,13 +354,13 @@ export const AuthoritySection: React.FC = () => {
                   </button>
 
                   <a
-                    href="https://instagram.com/belezaatual.estetica"
+                    href="https://instagram.com/clinicabelezaatual"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs text-[#8C3A45] hover:text-[#521C22] transition-colors ml-auto font-medium"
                   >
                     <Instagram className="w-3.5 h-3.5" />
-                    <span>@belezaatual.estetica</span>
+                    <span>@clinicabelezaatual</span>
                   </a>
                 </div>
 
