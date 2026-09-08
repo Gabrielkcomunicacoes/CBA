@@ -133,7 +133,7 @@ export const Footer: React.FC = () => {
               © {new Date().getFullYear()} Beleza Atual Clínica de Estética Ltda. Todos os direitos reservados.
             </p>
             <p className="text-[10px] text-[#8F7D73]">
-              Responsáveis Técnicos: Dr. Deli Brito (CRF/SP 52.349) • Luciana Freire (CRF-SP 45.891). Estabelecimento em conformidade com as normas da Anvisa e Vigilância Sanitária Municipal.
+              Responsável Técnico: Dr. Deli Brito (CRF/SP 52.349) • Fundadora: Luciana Freire. Estabelecimento em conformidade com as normas da Anvisa e Vigilância Sanitária Municipal.
             </p>
           </div>
 

@@ -412,14 +412,14 @@ export const FAQS: FaqItem[] = [
 export const CLINIC_PHOTOS: ClinicPhoto[] = [
   {
     id: 'photo-recepcao',
-    title: 'Recepção e Atendimento',
+    title: 'Recepção e Acolhimento',
     description: 'Design contemporâneo, iluminação suave e recepção acolhedora',
     image: '/assets/recepcao-cba.webp',
   },
   {
     id: 'photo-consultorio',
-    title: 'Sala de Procedimentos Estéticos',
-    description: 'Equipamentos modernos com rigoroso padrão de biossegurança e conforto',
+    title: 'Consultório & Sala de Procedimentos',
+    description: 'Ambiente privativo para avaliação individualizada e procedimentos com rigoroso padrão de biossegurança',
     image: '/assets/consultorio-cba2.webp',
   },
   {
@@ -433,12 +433,6 @@ export const CLINIC_PHOTOS: ClinicPhoto[] = [
     title: 'Espaço Café & Boas-Vindas',
     description: 'Café expresso e atendimento exclusivo preparado para sua visita',
     image: '/assets/area-de-cafe-cba.webp',
-  },
-  {
-    id: 'photo-consultorio-atendimento',
-    title: 'Consultório de Avaliação',
-    description: 'Espaço privativo e reservado para diagnósticos e estética individualizada',
-    image: '/assets/consultorio-cba.webp',
   },
   {
     id: 'photo-banheiro',

@@ -9,8 +9,12 @@ interface HeroSectionProps {
 
 const HERO_SLIDES = [
   {
-    src: '/assets/clinica_interior_1.webp',
-    alt: 'Ambiente exclusivo da Clínica Beleza Atual',
+    src: '/assets/recepcao-cba.webp',
+    alt: 'Recepção e atendimento exclusivo da Clínica Beleza Atual em São Bernardo do Campo',
+  },
+  {
+    src: '/assets/consultorio-cba2.webp',
+    alt: 'Consultório e sala de procedimentos da Clínica Beleza Atual',
   },
   {
     src: '/assets/tratamento_luvas_1.webp',

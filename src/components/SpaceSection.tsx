@@ -118,7 +118,7 @@ export const SpaceSection: React.FC<SpaceSectionProps> = ({ onOpenDirections }) 
           </div>
 
           {/* Interactive Thumbnails Row */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mt-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 mt-4">
             {CLINIC_PHOTOS.map((photo, index) => {
               const isActive = index === activePhotoIndex;
               return (
