@@ -77,7 +77,7 @@ export const Footer: React.FC = () => {
               <li><a href="#tratamentos" className="hover:text-[#FAF7F2] transition-colors">Preenchimento Facial Estruturado</a></li>
               <li><a href="#tratamentos" className="hover:text-[#FAF7F2] transition-colors">Estética Íntima (Feminina e Masculina)</a></li>
               <li><a href="#tratamentos" className="hover:text-[#FAF7F2] transition-colors">Bioestimuladores de Colágeno</a></li>
-              <li><a href="#tratamentos" className="hover:text-[#FAF7F2] transition-colors">Toxina Botulínica Preventiva</a></li>
+              <li><a href="#tratamentos" className="hover:text-[#FAF7F2] transition-colors">Suavização de Linhas de Expressão</a></li>
               <li><a href="#tratamentos" className="hover:text-[#FAF7F2] transition-colors">Protocolos Corporais & Flacidez</a></li>
             </ul>
           </div>

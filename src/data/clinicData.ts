@@ -176,18 +176,18 @@ export const TREATMENTS: Treatment[] = [
     image: '/assets/5.webp',
   },
   {
-    id: 'toxina-botulinica',
+    id: 'suavizacao-linhas',
     category: 'facial',
-    title: 'Toxina Botulínica Preventiva e Corretiva',
-    subtitle: 'Suavização de linhas sem congelar a sua expressão',
-    description: 'Aplicação milimétrica para relaxamento da musculatura hipercinética da testa, glabela e pés de galinha, garantindo um olhar descansado e fresco.',
+    title: 'Suavização de Linhas de Expressão',
+    subtitle: 'Atenuação de marcas sem congelar a sua expressão',
+    description: 'Protocolo milimétrico para atenuação das linhas de movimento da testa, glabela e contorno dos olhos, garantindo um olhar descansado, harmônico e revigorado.',
     benefits: [
-      'Suavização de rugas dinâmicas',
-      'Prevenção de vincos estáticos profundos',
+      'Suavização de linhas dinâmicas',
+      'Prevenção de vincos profundos',
       'Expressão serena e radiante',
       'Duração de 4 a 6 meses'
     ],
-    indications: ['Linhas de expressão na testa', 'Rugas ao redor dos olhos', 'Linhas de franzimento (glabela)'],
+    indications: ['Linhas de expressão na testa', 'Linhas ao redor dos olhos', 'Linhas de franzimento (glabela)'],
     sessionDuration: '30 minutos',
     recoveryTime: 'Imediato',
     tag: 'Suavidade',
@@ -385,7 +385,7 @@ export const FAQS: FaqItem[] = [
   {
     id: 'faq-3',
     question: 'A clínica atende homens?',
-    answer: 'Sim! Temos um público masculino expressivo que busca desde tratamentos faciais sutis (como toxina botulínica preventiva, bioestimuladores e fios) até procedimentos corporais e estética íntima masculina. Todos os atendimentos contam com máxima discrição e protocolos adaptados à anatomia masculina.'
+    answer: 'Sim! Temos um público masculino expressivo que busca desde tratamentos faciais sutis (como suavização de linhas de expressão, bioestimuladores e fios) até procedimentos corporais e estética íntima masculina. Todos os atendimentos contam com máxima discrição e protocolos adaptados à anatomia masculina.'
   },
   {
     id: 'faq-4',
