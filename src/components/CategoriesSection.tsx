@@ -66,7 +66,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#6D242C]" />
-                    <span>Botox preventivo e corretivo</span>
+                    <span>Suavização de linhas de expressão</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#6D242C]" />
@@ -260,7 +260,7 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({ onSelectCa
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />
-                    <span>Botox e bioestimuladores sutis</span>
+                    <span>Suavização de linhas e bioestimuladores</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C2A27A]" />

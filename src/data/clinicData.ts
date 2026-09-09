@@ -34,7 +34,7 @@ export const getWhatsAppLink = (originContext?: string, customMessage?: string):
         text = 'Olá! Vi a página da Beleza Atual e gostaria de agendar uma avaliação individualizada.';
         break;
       case 'facial':
-        text = 'Olá! Gostaria de entender melhor as opções de tratamentos faciais (fios, botox, preenchimento) e agendar uma avaliação.';
+        text = 'Olá! Gostaria de entender melhor as opções de tratamentos faciais (fios, linhas de expressão, preenchimento) e agendar uma avaliação.';
         break;
       case 'corporal':
         text = 'Olá! Tenho interesse em tratamentos corporais (flacidez, gordura localizada, drenagem) e gostaria de agendar uma avaliação.';
@@ -363,7 +363,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 'test-4',
     name: 'Mariana F. V.',
     initials: 'M.F.V.',
-    treatment: 'Botox Preventivo e Protocolo Glow',
+    treatment: 'Suavização de Linhas e Protocolo Glow',
     rating: 5,
     highlight: 'Não troco por nenhuma outra clínica',
     quote: 'O que mais me encanta na Beleza Atual é que eles nunca tentam te empurrar procedimentos desnecessários. Eles realmente avaliam o que faz sentido para você. O respeito à nossa individualidade é real!',

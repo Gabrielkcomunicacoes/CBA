@@ -35,7 +35,7 @@ export const InteractiveAssessmentModal: React.FC<InteractiveAssessmentModalProp
     }
     if (focusArea === 'Facial' && (mainConcern.includes('Volume') || mainConcern.includes('Harmonia'))) {
       return {
-        title: 'Preenchimento Facial Estruturado & Botox',
+        title: 'Preenchimento Facial & Suavização de Linhas',
         desc: 'Para restaurar contornos, maçãs do rosto, olheiras ou lábios com ácido hialurônico de alta pureza.',
         treatmentTag: 'preenchimento',
       };
@@ -125,7 +125,7 @@ export const InteractiveAssessmentModal: React.FC<InteractiveAssessmentModalProp
             </h4>
             <div className="grid grid-cols-1 gap-2.5">
               {[
-                { id: 'Facial', label: 'Rosto (Flacidez, sustentação, rugas, contorno)', sub: 'Fios, preenchimento, botox, bioestimuladores' },
+                { id: 'Facial', label: 'Rosto (Flacidez, sustentação, rugas, contorno)', sub: 'Fios, preenchimento, linhas de expressão, bioestimuladores' },
                 { id: 'Corporal', label: 'Corpo (Flacidez, gordura localizada, drenagem)', sub: 'Remodelagem corporal e firmeza' },
                 { id: 'Estética Íntima', label: 'Estética Íntima (Feminina ou Masculina)', sub: 'Atendimento privativo com sigilo e discrição' },
                 { id: 'Estética Masculina', label: 'Estética Masculina (Rosto, corpo ou íntimo)', sub: 'Protocolos personalizados para anatomia masculina' },
