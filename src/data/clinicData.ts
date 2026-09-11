@@ -16,7 +16,7 @@ export const CLINIC_INFO = {
   hours: 'Segunda a Sexta: 08h às 20h | Sábado: 08h às 14h',
   instagram: '@clinicabelezaatual',
   instagramUrl: 'https://instagram.com/clinicabelezaatual',
-  logo: '/assets/logo.jpg',
+  logo: '/assets/logo-transparente.webp',
   logoTransparent: '/assets/logo-transparente.webp',
   googleMapsUrl: 'https://maps.google.com/?q=Rua+Jurubatuba,+1350+-+Centro,+Sao+Bernardo+do+Campo+-+SP',
 };
@@ -420,7 +420,13 @@ export const CLINIC_PHOTOS: ClinicPhoto[] = [
     id: 'photo-consultorio',
     title: 'Consultório & Sala de Procedimentos',
     description: 'Ambiente privativo para avaliação individualizada e procedimentos com rigoroso padrão de biossegurança',
-    image: '/assets/consultorio-cba2.webp',
+    image: '/assets/consultorio-cba.webp',
+  },
+  {
+    id: 'photo-interior',
+    title: 'Ambiente Clínico & Conforto',
+    description: 'Espaço planejado com tecnologia e privacidade para o seu atendimento',
+    image: '/assets/clinica_interior_1.webp',
   },
   {
     id: 'photo-espera',

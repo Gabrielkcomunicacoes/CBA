@@ -20,7 +20,7 @@ export const IntimateAestheticsSection: React.FC = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative aspect-[4/5] rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border border-[#FAF7F2]/10">
                 <img
-                  src="/assets/sigilo-e-acolhimento.webp"
+                  src="/assets/outra.webp"
                   alt="Atendimento com sigilo e discrição - Estética Íntima Beleza Atual"
                   className="w-full h-full object-cover filter contrast-95"
                   loading="lazy"

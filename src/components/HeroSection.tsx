@@ -13,7 +13,7 @@ const HERO_SLIDES = [
     alt: 'Recepção e atendimento exclusivo da Clínica Beleza Atual em São Bernardo do Campo',
   },
   {
-    src: '/assets/consultorio-cba2.webp',
+    src: '/assets/consultorio-cba.webp',
     alt: 'Consultório e sala de procedimentos da Clínica Beleza Atual',
   },
   {
