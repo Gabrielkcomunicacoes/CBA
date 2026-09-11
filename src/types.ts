@@ -1,6 +1,8 @@
 export interface Treatment {
   id: string;
-  category: 'facial' | 'corporal' | 'intimo' | 'masculino';
+  category: 'facial' | 'corporal' | 'intimo' | 'masculino' | string;
+  number?: string;
+  featured?: boolean;
   title: string;
   subtitle: string;
   description: string;
@@ -8,28 +10,26 @@ export interface Treatment {
   indications: string[];
   sessionDuration: string;
   recoveryTime: string;
-  image: string;
   tag: string;
-  featured?: boolean;
-  number?: string;
+  image: string;
 }
 
 export interface Professional {
   id: string;
   name: string;
-  badge?: string;
-  roleTitle?: string;
+  badge: string;
+  roleTitle: string;
   title: string;
-  registration: string;
+  registration?: string;
   image: string;
   experience: string;
-  instagram?: string;
-  instagramUrl?: string;
-  specialties: string[];
+  instagram: string;
+  instagramUrl: string;
   bio: string;
+  rqes?: Array<{ label: string; value: string }>;
+  education: string[];
+  specialties: string[];
   credentials: string[];
-  rqes?: { label: string; value: string }[];
-  education?: string[];
 }
 
 export interface BeforeAfterCase {
@@ -50,8 +50,8 @@ export interface Testimonial {
   initials: string;
   treatment: string;
   rating: number;
-  quote: string;
   highlight: string;
+  quote: string;
   date: string;
 }
 
@@ -59,7 +59,6 @@ export interface FaqItem {
   id: string;
   question: string;
   answer: string;
-  category?: string;
 }
 
 export interface ClinicPhoto {

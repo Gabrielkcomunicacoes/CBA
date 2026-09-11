@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Clock, Sparkles, CheckCircle2, ShieldCheck, MessageCircle, AlertCircle } from 'lucide-react';
+import { X, Clock, Sparkles, CheckCircle2, ShieldCheck, MessageCircle } from 'lucide-react';
 import { TREATMENTS, getWhatsAppLink } from '../data/clinicData';
 import { Treatment } from '../types';
 

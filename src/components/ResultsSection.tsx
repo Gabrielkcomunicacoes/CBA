@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import { Sparkles, MessageCircle, ChevronLeft, ChevronRight, AlertCircle, Eye } from 'lucide-react';
 import { BEFORE_AFTER_CASES, getWhatsAppLink } from '../data/clinicData';
 import { AsymmetricWaveTransition } from './OrganicWaves';

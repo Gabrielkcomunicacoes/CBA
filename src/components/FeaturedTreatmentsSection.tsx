@@ -1,5 +1,5 @@
-import React from 'react';
-import { MessageCircle, Check, Sparkles, ArrowRight, ShieldCheck, User } from 'lucide-react';
+import React, { useState } from 'react';
+import { MessageCircle, ArrowRight, ShieldCheck, User, Sparkles } from 'lucide-react';
 import { getWhatsAppLink } from '../data/clinicData';
 import { Treatment } from '../types';
 

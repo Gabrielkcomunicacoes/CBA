@@ -100,4 +100,3 @@ export const FacilitiesSection: React.FC = () => {
     </section>
   );
 };
-

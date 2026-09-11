@@ -1,21 +1,14 @@
 {
   "name": "Beleza Atual Clínica de Estética",
   "short_name": "Beleza Atual",
-  "description": "Clínica de Estética Avançada em São Bernardo do Campo - SP",
   "icons": [
     {
       "src": "/favicon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
-    },
-    {
-      "src": "/favicon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
   ],
   "theme_color": "#521C22",
   "background_color": "#FAF7F2",
-  "display": "standalone",
-  "start_url": "/"
+  "display": "standalone"
 }

@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowRight, Sparkles, Shield, Heart, User } from 'lucide-react';
+import React, { useState } from 'react';
+import { Sparkles, ArrowRight, Shield, Heart, User } from 'lucide-react';
 import { getWhatsAppLink } from '../data/clinicData';
 import { AsymmetricWaveTransition } from './OrganicWaves';
 
