@@ -423,12 +423,6 @@ export const CLINIC_PHOTOS: ClinicPhoto[] = [
     image: '/assets/consultorio-cba.webp',
   },
   {
-    id: 'photo-interior',
-    title: 'Ambiente Clínico & Conforto',
-    description: 'Espaço planejado com tecnologia e privacidade para o seu atendimento',
-    image: '/assets/clinica_interior_1.webp',
-  },
-  {
     id: 'photo-espera',
     title: 'Sala de Espera Aconchegante',
     description: 'Ambiente tranquilo e relaxante para o seu bem-estar antes do atendimento',
